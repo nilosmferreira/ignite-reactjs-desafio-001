@@ -6,7 +6,7 @@ module.exports = {
       runtime: 'automatic'
     }]
   ],
-  plugings: [
+  plugins: [
     'inline-import-data-uri'
   ]
 }
