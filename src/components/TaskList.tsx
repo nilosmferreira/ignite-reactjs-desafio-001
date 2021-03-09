@@ -34,6 +34,15 @@ export function TaskList() {
 
   function handleToggleTaskCompletion(id: number) {
     // Altere entre `true` ou `false` o campo `isComplete` de uma task com dado ID
+    const newCompletions = tasks.map((task) => {
+      if (task.id === id) {
+        task.isComplete = true;
+      }
+      return task;
+    });
+
+    setTasks(newCompletions);
+    /*
     const found = handleFindTask(id);
 
     if (found.task) {
@@ -45,16 +54,18 @@ export function TaskList() {
 
       setTasks(tasks.slice(0));
     }
+    */
   }
 
   function handleRemoveTask(id: number) {
     // Remova uma task da listagem pelo ID
-    const found = handleFindTask(id);
+    setTasks(tasks.filter((task) => task.id !== id));
+    // const found = handleFindTask(id);
 
-    if (found.task) {
-      tasks.splice(found.index, 1);
-      setTasks(tasks.slice(0));
-    }
+    // if (found.task) {
+    //   tasks.splice(found.index, 1);
+    //   setTasks(tasks.slice(0));
+    // }
   }
 
   function handleFindTask(id: number): FindTask {

@@ -5,5 +5,8 @@ module.exports = {
     ['@babel/preset-react', {
       runtime: 'automatic'
     }]
+  ],
+  plugings: [
+    'inline-import-data-uri'
   ]
 }
