@@ -17,7 +17,7 @@
 ## 🔥 Tecnologias
 - [React](https://reactjs.org)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Sass] (https://sass-lang.com/)
+- [Sass](https://sass-lang.com/)
 
 ## 💻 Projeto
 Desafio de criar uma página em reactjs baseada em um template proposto. O desafio era a manipulação de um array de Task
